@@ -1,0 +1,27 @@
+1. Crie um arquivo no seu diretório /home
+.
+	user01@vmMakina:~$ > ~/arquivo.txt
+
+2. Modifique as permissões do arquivo que você criou para 644.
+
+	user01@vmMakina:~$ chmod 644 ~/arquivo.txt
+
+3. Transfira este arquivo para a máquina da sua dupla. Para isso utilize a cópia remota com o comando scp.
+
+	user01@vmMakina:~$ scp -v ./arquivo.txt liks@192.168.1.123:~/
+
+4. Recupere o arquivo transferido fazendo a cópia dele da máquina remota de sua dupla para a sua. Também use o comando scp.
+
+	user01@vmMakina:~$ scp -v liks@192.168.1.123:~/arquivo.txt ./arquivoRecuperado.txt
+
+
+5. Crie agora uma pasta, com o nome arbitrário.
+
+	user01@vmMakina:~$ mkdir PastaMuitoLoca
+
+6. Coloque um arquivo, que pode estar vazio, dentro desta pasta.
+
+	user01@vmMakina:~$ > PastaMuitoLoca/arquivo.txt
+
+
+	user01@vmMakina:~$ scp -r pasta joao@192.168.1.17:/home/joao
