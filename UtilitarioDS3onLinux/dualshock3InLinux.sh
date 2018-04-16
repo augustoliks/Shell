@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo echo "Facilitator for connecting dualshock3 in Linux, ceated by Carlos Neto (github: @augustoliks)"
+sudo echo "Facilitator for connecting dualshock3 on Linux, ceated by Carlos Neto (github: @augustoliks)"
+
 echo ""
 
 dpkg --get-selections | grep -i "xboxdrv"
